@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Spam</title>
+
+</head>
+<style>
+      input[type=submit] {
+        background-color: #62529c;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    </style>
+<body style="text-align:center; background-color:powderblue;">
+ <div class="login"  >
+	<h1><u>Spam Classifier</u></h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<h2><b>Message:</b></h2><br>
+        <textarea name='message' rows='10' placeholder='Enter text here...' border style="border:solid 2px black;" cols='52'></textarea><br>
+        <input type="submit" value="Submit"></input>
+    </form>
+
+   <br>
+   <br>
+    {{msg}}
+ </div>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Spam</title>
+
+  
+</head>
+<body style="text-align:center; background-color:powderblue;">
+ <div class="login">
+	<h1><u>Spam Classifier</u></h1><br></br>
+        {% if msg == 1 %}
+        <h1 style='color:red'>This is Spam Message</h1>
+        {% elif msg == 0 %}
+        <h1 style='color:green'>This is NOT Spam Message</h1>
+        {% endif %}
+    
+ </div>
+
+</body>
+</html>
